@@ -18,6 +18,7 @@ namespace LinearRegression
         {
             InitializeComponent();
             Graph_Button.Enabled = false;  
+            button1.Enabled = false;
 
             // Initialize Grid View
             dataGridView1.ColumnCount = 5;
@@ -93,6 +94,7 @@ namespace LinearRegression
 
             Fill_Data(arr_Date, arr_Open, arr_High, arr_Low, arr_Close);
             Graph_Button.Enabled = true;
+            button1.Enabled = true;
         }
 
         private void Graph_Button_Click(object sender, EventArgs e)
