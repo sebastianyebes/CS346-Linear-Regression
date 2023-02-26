@@ -12,7 +12,7 @@ namespace LinearRegression
         public string[] arr_Open = new string[13];
         public string[] arr_High = new string[13];
         public string[] arr_Low = new string[13];
-        public string[] arr_Close = new string[143];
+        public string[] arr_Close = new string[13];
 
         public Form1()
         {
