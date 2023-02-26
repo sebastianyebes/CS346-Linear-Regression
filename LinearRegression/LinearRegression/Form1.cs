@@ -8,6 +8,11 @@ namespace LinearRegression
     {
         // Initialize Variables
         string path;
+        public string[] arr_Date = new string[70];
+        public string[] arr_Open = new string[70];
+        public string[] arr_High = new string[70];
+        public string[] arr_Low = new string[70];
+        public string[] arr_Close = new string[70];
 
         public Form1()
         {
@@ -39,7 +44,7 @@ namespace LinearRegression
             if(Openprice.Text != "" && HighPrice.Text != "" && LowPrice.Text != "")
             {
                 // Calculate through Multiple Regression
-                double predicted_y = 16.53205682 + (Double.Parse(Openprice.Text) * -0.889831308) + (Double.Parse(HighPrice.Text) * 1.155089547) + (Double.Parse(LowPrice.Text) * 0.601626723);
+                double predicted_y = 16.53205682 + (double.Parse(Openprice.Text) * -0.889831308) + (double.Parse(HighPrice.Text) * 1.155089547) + (double.Parse(LowPrice.Text) * 0.601626723);
                 double rounded = Math.Round(predicted_y, 2);
                 PredictedClose.Text = rounded.ToString();
             }
@@ -51,12 +56,6 @@ namespace LinearRegression
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string[] arr_Date = new string[70];
-            string[] arr_Open = new string[70];
-            string[] arr_High = new string[70];
-            string[] arr_Low = new string[70];
-            string[] arr_Close = new string[70];
-
             // Open File Code
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
@@ -98,7 +97,7 @@ namespace LinearRegression
 
         private void Graph_Button_Click(object sender, EventArgs e)
         {
-            Graph_Form form = new Graph_Form();
+            Graph_Form form = new Graph_Form(arr_Open, arr_High, arr_Low, arr_Close);
             form.ShowDialog();
         }
     }
