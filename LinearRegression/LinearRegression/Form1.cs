@@ -8,11 +8,11 @@ namespace LinearRegression
     {
         // Initialize Variables
         string path;
-        public string[] arr_Date = new string[70];
-        public string[] arr_Open = new string[70];
-        public string[] arr_High = new string[70];
-        public string[] arr_Low = new string[70];
-        public string[] arr_Close = new string[70];
+        public string[] arr_Date = new string[13];
+        public string[] arr_Open = new string[13];
+        public string[] arr_High = new string[13];
+        public string[] arr_Low = new string[13];
+        public string[] arr_Close = new string[13];
 
         public Form1()
         {
@@ -101,11 +101,11 @@ namespace LinearRegression
         {
             // scatter plot
             Graph_Form1 form1 = new Graph_Form1(arr_Open, arr_High, arr_Low, arr_Close);
-            form1.ShowDialog();
+            form1.Show();
             
             // candle stick
             Graph_Form2 form2 = new Graph_Form2(arr_Date,arr_Open, arr_High, arr_Low, arr_Close);
-            form2.ShowDialog();
+            form2.Show();
         }
     }
 }

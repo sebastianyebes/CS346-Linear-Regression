@@ -46,8 +46,8 @@
             this.chart1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(9, 10);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2);
+            this.chart1.Location = new System.Drawing.Point(12, 12);
+            this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series1.ChartArea = "ChartArea1";
@@ -76,7 +76,7 @@
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
             this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(564, 366);
+            this.chart1.Size = new System.Drawing.Size(752, 450);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "Multiple Regression Chart";
             // 
@@ -85,24 +85,25 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(12, 99);
+            this.label1.Location = new System.Drawing.Point(16, 122);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(20, 173);
+            this.label1.Size = new System.Drawing.Size(27, 213);
             this.label1.TabIndex = 1;
             this.label1.Text = "C\r\nl\r\no\r\ns\r\ne\r\n\r\nP\r\nr\r\ni\r\nc\r\ne";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Graph_Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 386);
+            this.ClientSize = new System.Drawing.Size(776, 475);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chart1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Graph_Form1";
-            this.Text = "Graph";
+            this.Text = "Scatter Plot Graph";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 

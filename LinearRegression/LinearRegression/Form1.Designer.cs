@@ -45,9 +45,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(501, 77);
+            this.button1.Location = new System.Drawing.Point(493, 107);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 38);
+            this.button1.Size = new System.Drawing.Size(103, 33);
             this.button1.TabIndex = 0;
             this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = true;
@@ -55,21 +55,21 @@
             // 
             // Openprice
             // 
-            this.Openprice.Location = new System.Drawing.Point(112, 36);
+            this.Openprice.Location = new System.Drawing.Point(116, 29);
             this.Openprice.Name = "Openprice";
             this.Openprice.Size = new System.Drawing.Size(329, 22);
             this.Openprice.TabIndex = 1;
             // 
             // HighPrice
             // 
-            this.HighPrice.Location = new System.Drawing.Point(112, 74);
+            this.HighPrice.Location = new System.Drawing.Point(116, 60);
             this.HighPrice.Name = "HighPrice";
             this.HighPrice.Size = new System.Drawing.Size(329, 22);
             this.HighPrice.TabIndex = 2;
             // 
             // LowPrice
             // 
-            this.LowPrice.Location = new System.Drawing.Point(112, 116);
+            this.LowPrice.Location = new System.Drawing.Point(116, 93);
             this.LowPrice.Name = "LowPrice";
             this.LowPrice.Size = new System.Drawing.Size(329, 22);
             this.LowPrice.TabIndex = 3;
@@ -77,7 +77,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 39);
+            this.label1.Location = new System.Drawing.Point(27, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 16);
             this.label1.TabIndex = 4;
@@ -86,7 +86,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 119);
+            this.label3.Location = new System.Drawing.Point(29, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 16);
             this.label3.TabIndex = 6;
@@ -95,16 +95,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 179);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(26, 154);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 16);
+            this.label4.Size = new System.Drawing.Size(122, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Predicted Close:";
             // 
             // PredictedClose
             // 
             this.PredictedClose.AutoSize = true;
-            this.PredictedClose.Location = new System.Drawing.Point(139, 179);
+            this.PredictedClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PredictedClose.Location = new System.Drawing.Point(159, 154);
             this.PredictedClose.Name = "PredictedClose";
             this.PredictedClose.Size = new System.Drawing.Size(0, 16);
             this.PredictedClose.TabIndex = 8;
@@ -112,7 +114,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 77);
+            this.label2.Location = new System.Drawing.Point(28, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 16);
             this.label2.TabIndex = 9;
@@ -120,9 +122,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(502, 28);
+            this.button2.Location = new System.Drawing.Point(493, 29);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 38);
+            this.button2.Size = new System.Drawing.Size(103, 33);
             this.button2.TabIndex = 10;
             this.button2.Text = "Import";
             this.button2.UseVisualStyleBackColor = true;
@@ -132,7 +134,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 222);
+            this.dataGridView1.Location = new System.Drawing.Point(29, 210);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -141,9 +143,9 @@
             // 
             // Graph_Button
             // 
-            this.Graph_Button.Location = new System.Drawing.Point(503, 128);
+            this.Graph_Button.Location = new System.Drawing.Point(493, 68);
             this.Graph_Button.Name = "Graph_Button";
-            this.Graph_Button.Size = new System.Drawing.Size(103, 39);
+            this.Graph_Button.Size = new System.Drawing.Size(103, 33);
             this.Graph_Button.TabIndex = 12;
             this.Graph_Button.Text = "Graph";
             this.Graph_Button.UseVisualStyleBackColor = true;
@@ -153,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 600);
+            this.ClientSize = new System.Drawing.Size(636, 589);
             this.Controls.Add(this.Graph_Button);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
