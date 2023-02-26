@@ -4,16 +4,16 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace LinearRegression
 {
-    public partial class Graph_Form : Form
+    public partial class Graph_Form1 : Form
     {
         // Initialize variables
-        public string[] arr_Date2 = new string[70];
-        public string[] arr_Open2 = new string[70];
-        public string[] arr_High2 = new string[70];
-        public string[] arr_Low2 = new string[70];
-        public string[] arr_Close2 = new string[70];
+        public string[] arr_Date2;
+        public string[] arr_Open2;
+        public string[] arr_High2;
+        public string[] arr_Low2;
+        public string[] arr_Close2;
 
-        public Graph_Form(string[] open, string[] high, string[] low, string[] close)
+        public Graph_Form1(string[] open, string[] high, string[] low, string[] close)
         {
             InitializeComponent();
 
@@ -34,7 +34,7 @@ namespace LinearRegression
             chart1.ChartAreas[0].AxisY.Minimum = 80;
 
             //Add Values to chart
-            for (int i = 0; i < arr_Date2.Length; i++)
+            for (int i = 0; i < 13; i++)
             {
                 chart1.Series["Open"].Points.AddXY(double.Parse(arr_Open2[i]), double.Parse(arr_Close2[i]));
                 chart1.Series["High"].Points.AddXY(double.Parse(arr_High2[i]), double.Parse(arr_Close2[i]));

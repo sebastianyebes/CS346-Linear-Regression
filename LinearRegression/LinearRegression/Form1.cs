@@ -99,8 +99,13 @@ namespace LinearRegression
 
         private void Graph_Button_Click(object sender, EventArgs e)
         {
-            Graph_Form form = new Graph_Form(arr_Open, arr_High, arr_Low, arr_Close);
-            form.ShowDialog();
+            // scatter plot
+            Graph_Form1 form1 = new Graph_Form1(arr_Open, arr_High, arr_Low, arr_Close);
+            form1.ShowDialog();
+            
+            // candle stick
+            Graph_Form2 form2 = new Graph_Form2(arr_Date,arr_Open, arr_High, arr_Low, arr_Close);
+            form2.ShowDialog();
         }
     }
 }
